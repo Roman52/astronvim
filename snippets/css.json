@@ -1,0 +1,11 @@
+{
+  "setup": {
+    "prefix": ["__l"],
+    "body": [
+      "@media (width < 1024px) {",
+      "\t$1",
+      "}"
+    ],
+    "description": ""
+  }
+}

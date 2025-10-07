@@ -38,17 +38,21 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {
-      -- emmet_ls = {
-      --   filetypes = {
-      --     "php", -- optional, if you use Emmet in PHP files
-      --   },
-      -- },
-    },
+    servers = {},
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      emmet_ls = {
+        filetypes = { "php" },
+        init_options = {
+          html = {
+            options = {
+              ["bem.enabled"] = true,
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {

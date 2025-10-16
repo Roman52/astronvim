@@ -43,6 +43,14 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = true, -- sets vim.opt.wrap
+        list = true,
+        listchars = {
+          tab = "▸ ",     -- символ для таба
+          trail = "·",    -- символ для пробелов в конце строки
+          extends = ">",  -- если строка выходит за экран справа
+          precedes = "<", -- если выходит слева
+          nbsp = "␣",     -- символ неразрывного пробела
+        },
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

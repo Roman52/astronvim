@@ -1,8 +1,15 @@
 {
-  "setup": {
+  "php": {
     "prefix": ["php"],
     "body": [
       "<?php $1 ?>"
+    ],
+    "description": ""
+  },
+  "phpp": {
+    "prefix": ["phpp"],
+    "body": [
+      "<?= $1 ?>"
     ],
     "description": ""
   }

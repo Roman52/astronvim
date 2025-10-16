@@ -1,5 +1,5 @@
 {
-  "setup": {
+  "__l": {
     "prefix": ["__l"],
     "body": [
       "@media (width < 1024px) {",
@@ -7,5 +7,23 @@
       "}"
     ],
     "description": ""
-  }
+  },
+  "__m": {
+    "prefix": ["__m"],
+    "body": [
+      "@media (width < 640px) {",
+      "\t$1",
+      "}"
+    ],
+    "description": ""
+  },
+  "__s": {
+    "prefix": ["__s"],
+    "body": [
+      "@media (width < 480px) {",
+      "\t$1",
+      "}"
+    ],
+    "description": ""
+  },
 }

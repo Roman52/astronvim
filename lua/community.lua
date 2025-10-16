@@ -9,5 +9,9 @@ return {
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.scrolling.mini-animate" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.typescript" },
 }

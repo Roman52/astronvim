@@ -23,6 +23,16 @@ return {
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
 
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      indent = {
+        enable = true,
+        disable = { "scss" }, -- ⚠️ отключаем кривые отступы
+      },
+    },
+  },
+
+  {
     "L3MON4D3/LuaSnip",
     config = function(plugin, opts)
       require "astronvim.plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call

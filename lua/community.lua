@@ -14,4 +14,5 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.editing-support.vim-visual-multi" },
 }

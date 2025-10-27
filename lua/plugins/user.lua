@@ -21,6 +21,9 @@ return {
   -- { "max397574/better-escape.nvim", enabled = false },
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
+  {
+    "ku1ik/vim-pasta",
+  },
 
   {
     "nvim-treesitter/nvim-treesitter",

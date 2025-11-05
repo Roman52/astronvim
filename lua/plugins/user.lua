@@ -25,18 +25,21 @@ return {
     "ku1ik/vim-pasta",
   },
 
-  -- undo improve
+  -- custom mappings
   {
     "AstroNvim/astrocore",
     opts = {
       mappings = {
         i = {
+          -- undo improve
           ["<Space>"] = { "<C-g>u<Space>", desc = "Разрыв undo при пробеле" },
           ["."] = { "<C-g>u.", desc = "Разрыв undo при точке" },
           [","] = { "<C-g>u,", desc = "Разрыв undo при запятой" },
           ["!"] = { "<C-g>u!", desc = "Разрыв undo при восклицательном знаке" },
           ["?"] = { "<C-g>u?", desc = "Разрыв undo при вопросительном знаке" },
           ["<CR>"] = { "<C-g>u<CR>", desc = "Разрыв undo при Enter" },
+          -- ⬇️ Добавляем Shift+Enter для новой строки снизу с автоотступом
+          ["<S-CR>"] = { "<Esc>O", desc = "Добавить новую строку снизу" },
         },
       },
     },

@@ -25,6 +25,23 @@ return {
     "ku1ik/vim-pasta",
   },
 
+  -- undo improve
+  {
+    "AstroNvim/astrocore",
+    opts = {
+      mappings = {
+        i = {
+          ["<Space>"] = { "<C-g>u<Space>", desc = "Разрыв undo при пробеле" },
+          ["."] = { "<C-g>u.", desc = "Разрыв undo при точке" },
+          [","] = { "<C-g>u,", desc = "Разрыв undo при запятой" },
+          ["!"] = { "<C-g>u!", desc = "Разрыв undo при восклицательном знаке" },
+          ["?"] = { "<C-g>u?", desc = "Разрыв undo при вопросительном знаке" },
+          ["<CR>"] = { "<C-g>u<CR>", desc = "Разрыв undo при Enter" },
+        },
+      },
+    },
+  },
+
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {

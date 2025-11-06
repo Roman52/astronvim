@@ -11,6 +11,8 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
+    -- https://github.com/ellisonleao/gruvbox.nvim
+    -- https://github.com/EdenEast/nightfox.nvim
     colorscheme = "everforest",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {

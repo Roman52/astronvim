@@ -14,7 +14,7 @@
     "description": ""
   },
   "pre": {
-    "prefix": ["dump"],
+    "prefix": ["dd"],
     "body": [
       "echo '<pre>';",
       "print_r($1);",

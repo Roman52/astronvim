@@ -12,5 +12,14 @@
       "<?= $1 ?>"
     ],
     "description": ""
+  },
+  "pre": {
+    "prefix": ["dump"],
+    "body": [
+      "echo '<pre>';",
+      "print_r($1);",
+      "echo '</pre>';"
+    ],
+    "description": ""
   }
 }
